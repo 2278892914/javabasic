@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>thmeleaf</title>
+</head>
+<body>
+<span th:text="hello"></span>
+<hr/>
+<span th:text="${key}"></span>
+<hr/>
+<input th:field="${key}"/>
+<hr/>
+<span th:text="${#dates.format(date)}"></span>
+<hr/>
+<span th:text="${#strings.isEmpty(key)}"></span>
+<hr/>
+<span th:text="${#strings.length(key)}"></span>
+</body>
+</html>

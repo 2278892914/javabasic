@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加用户</title>
+</head>
+<body>
+	<form th:action="@{/save}" method="post">
+		编号：<input type="text" name="id" /><br/>
+		姓名：<input type="text" name="name" /><font color="red" th:errors="${aa.name}"></font><br/>
+		年龄：<input type="text" name="age" /><br/>
+		<input type="submit" value="OK"/>
+	</form>
+</body>
+</html>
